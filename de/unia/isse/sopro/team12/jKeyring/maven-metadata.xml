@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>de.unia.isse.sopro.team12</groupId>
+  <artifactId>jKeyring</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20180707111950</lastUpdated>
+  </versioning>
+</metadata>
