@@ -85,7 +85,11 @@ public class GnomeProvider implements IKeyring {
         try {
             // Need to do this somewhere, or we get warnings on console.
             // Also used by confirmation dialogs to give the app access to the login keyring.
-            LIBRARY.g_set_application_name(appName);
+            try {
+                LIBRARY.g_set_application_name(appName);
+            } catch (UnsatisfiedLinkError err) {
+                return false;
+            }
             if (!LIBRARY.gnome_keyring_is_available()) {
                 return false;
             }
